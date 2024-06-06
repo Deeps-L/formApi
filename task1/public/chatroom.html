@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socket Room</title>
+    <link rel="stylesheet" href="./chat.css" />
+
+</head>
+
+<body class="container">
+    <!-- Navbar with input box and send button -->
+    <div id="active" class="content">
+        <h1> <span id="activeUserSpan"> Welcome! Active Users</span>
+        </h1>
+        <div class="chatbox">
+            <div id="customMsg"></div>
+            <input type="text" name="name" id="message" value="" placeholder="Enter message!">
+            <button type="submit" id="sendBtn" name="button">Let me chat!</button>
+        </div>
+        <nav>
+            <ul id="active-list">
+                <li>Socket ID: <a id="socketIdLink">{UserSocket_id}</a></li>
+                <li>Email: <a id="emailLink">{UserSocket_email}</a></li>
+                <li>Name: <span id="name">{UserSocket_name}</span></li>
+
+            </ul>
+        </nav>
+        <button onclick="gotohome()">HOME</button>
+
+        <div id="popup" class="popup" style="display: none;">
+            <h2>User Data <button id="crossbtn" onclick="closePopup()">X</button></h2>
+            <ul>
+                <li>Socket ID: <span id="socketIdLinkPopup">{UserSocket_id}</span></li>
+                <li>Email: <span id="emailLinkPopup">{UserSocket_email}</span></li>
+                <li>Name: <span id="namePopup">{UserSocket_name}</span></li>
+                <li>LoginId: <span id="loginIdPopup">{UserSocket_loginId}</span></li>
+                <li>Address: <span id="addressPopup">{UserSocket_address}</span></li>
+                <li>MobileNo: <span id="mobileNoPopup">{UserSocket_mobileNo}</span></li>
+            </ul>
+        </div>
+        
+    </div>
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./socket.js"></script>
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function() {
+           
+            const activeUserSpan = document.getElementById('activeUserName'); // Added this line
+
+            // Example: Displaying the active user's name dynamically
+            const activeUserName = 'Active User'; // You can get this dynamically from your backend
+            activeUserSpan.textContent = activeUserName;
+        });
+    </script> -->
+
+</body>
+
+</html>

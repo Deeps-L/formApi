@@ -1,0 +1,107 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #3498db, #c0392b);
+}
+
+.content {
+    text-align: center;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.popup h2 {
+    margin-bottom: 10px;
+}
+
+.popup button {
+    float: right;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Navbar */
+nav {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #3498db;
+}
+
+/* Button */
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.popup #crossbtn{
+    background-color: #3498db;
+    color: #FFF;
+    border: none;
+    padding: 7px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #2980b9;
+}
+
+#customMsg{
+    border: 1px solid #b2b5b8;
+    background-color: #d66f6f;
+    color: #312cba;
+    font-size: 20px;
+    padding: 20px 0;
+    width: 500px;
+    border-radius: 5px;
+    
+}
+.chatbox{
+margin: 30px 0px;
+}
+#message{
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 8px;
+}

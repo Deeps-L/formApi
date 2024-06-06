@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Service Form</title>
+    <link rel="stylesheet" href="mystyle.css" />
+</head>
+
+<body>
+    <form action="/submit-form" method="post" id="myForm">
+        <div class="center">
+            <h1>Web Service Form</h1>
+            <div class="inputbox">
+                <input type="text" id="firstName" required="required">
+                <span>First Name</span>
+            </div>
+            <div class="inputbox">
+                <input type="text" id="lastName" required="required">
+                <span>Last Name</span>
+            </div>
+            <div class="inputbox">
+                <input type="tel" id="mobile" required="required" pattern="[0-9]{10}">
+                <span>Mobile no </span>
+            </div>
+            <div class="inputbox">
+                <input type="email" id="email" required="required">
+                <span>Email</span>
+            </div>
+            <div class="inputbox">
+                <input type="text" id="loginId" required="required" pattern="[a-zA-Z0-9]{8,}">
+                <span>Login </span>
+            </div>
+            <div class="inputbox">
+                <input type="password" id="password" required="required" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$">
+                <span>Password</span>
+            </div>
+            <div class="inputbox">
+                <input type="text" id="street" required="required">
+                <span>Street</span>
+            </div>
+            <div class="inputbox">
+                <input type="text" id="city" required="required">
+                <span>City</span>
+            </div>
+            <div class="inputbox">
+                <input type="text" id="state" required="required">
+                <span>State</span>
+            </div>
+            <div class="inputbox">
+                <input type="text" id="country" required="required">
+                <span>Country</span>
+            </div>
+            <div class="inputbox">
+                <button type="submit" id="submitBtn">Save</button>
+            </div>
+            <div class="inputbox">
+               <p>Already have an account ? <a href="./login.html">Login</a> </p>
+            </div>
+        </div>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
